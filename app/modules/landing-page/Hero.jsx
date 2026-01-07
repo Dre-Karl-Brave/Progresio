@@ -1,6 +1,8 @@
 'use client'
 
 import { motion } from 'motion/react'
+import Link from 'next/link'
+import Image from 'next/image'
 import { HERO_DATA } from '@/app/constants/landing-page/constants'
 
 export default function HeroSection() {
@@ -66,10 +68,12 @@ export default function HeroSection() {
           }}
           className='relative z-10 mt-8 flex flex-wrap items-center justify-center gap-4'
         >
-          <button className='w-60 transform rounded-lg bg-[#0F172A] px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#1e293b]'>
-            {HERO_DATA.buttons.primary}
-          </button>
-          <button className='w-60 transform rounded-lg border border-[#E5E7EB] bg-white px-6 py-2 font-medium text-[#0F172A] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#F8FAFC]'>
+          <Link href='/sign-in'>
+            <button className='w-60 transform cursor-pointer rounded-lg bg-[#0F172A] px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#1e293b]'>
+              {HERO_DATA.buttons.primary}
+            </button>
+          </Link>
+          <button className='w-60 transform cursor-pointer rounded-lg border border-[#E5E7EB] bg-white px-6 py-2 font-medium text-[#0F172A] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#F8FAFC]'>
             {HERO_DATA.buttons.secondary}
           </button>
         </motion.div>
@@ -89,7 +93,7 @@ export default function HeroSection() {
           className='relative z-10 mt-20 rounded-3xl border border-[#E5E7EB] bg-[#F8FAFC] p-4 shadow-md'
         >
           <div className='w-full overflow-hidden rounded-xl border border-[#E5E7EB]'>
-            <img
+            <Image
               src={HERO_DATA.image.src}
               alt={HERO_DATA.image.alt}
               className='aspect-[16/9] h-auto w-full object-cover'

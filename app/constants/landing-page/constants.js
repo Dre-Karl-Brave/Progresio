@@ -10,7 +10,7 @@ export const HERO_DATA = {
     secondary: 'Contact Support'
   },
   image: {
-    src: 'https://assets.aceternity.com/pro/aceternity-landing.webp',
+    src: '',
     alt: 'Landing page preview'
   }
 }
