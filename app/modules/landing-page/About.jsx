@@ -6,7 +6,7 @@ import { ABOUT_DATA } from '@/app/constants/landing-page/constants'
 
 export default function About() {
   return (
-    <section className='mx-auto max-w-7xl px-4 py-20 mt-32'>
+    <section id='about' className='mx-auto max-w-7xl px-4 py-20 mt-32'>
       <div className='grid items-start gap-20 lg:grid-cols-12'>
         {/* Left side - Text content */}
         <motion.div

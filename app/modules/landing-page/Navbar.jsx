@@ -26,11 +26,10 @@ export default function NavbarComponent() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const menuItems = [
-    { name: 'Features', href: '#features' },
     { name: 'About', href: '#about' },
-    { name: 'Services', href: '#services' },
-    { name: 'Pricing', href: '#pricing' },
-    { name: 'Contact', href: '#contact' }
+    { name: 'Features', href: '#features' },
+    { name: 'FAQ', href: '#faq' },
+    { name: 'Contacts', href: '#contact' }
   ]
 
   return (
@@ -41,7 +40,8 @@ export default function NavbarComponent() {
       height='70px'
       position='sticky'
       classNames={{
-        base: 'sticky top-0 z-50'
+        base: 'sticky top-0 z-50',
+        wrapper: 'px-4 sm:px-6'
       }}
     >
       <NavbarContent>
@@ -50,15 +50,17 @@ export default function NavbarComponent() {
           className='sm:hidden text-[#0F172A]'
           icon={<Menu size={24} />}
         />
-        <NavbarBrand className='gap-3'>
-          <div className='text-[#0F172A]'>
-            <ProgresioLogo />
-          </div>
-          <p className='font-bold text-2xl text-[#0F172A] tracking-tight'>Progresio</p>
+        <NavbarBrand>
+          <Link href='#main' className='flex items-center gap-3 cursor-pointer'>
+            <div className='text-[#0F172A]'>
+              <ProgresioLogo />
+            </div>
+            <p className='font-bold text-2xl text-[#0F172A] tracking-tight'>Progresio</p>
+          </Link>
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className='hidden sm:flex gap-8' justify='center'>
+      <NavbarContent className='hidden sm:flex gap-8 ml-auto'>
         {menuItems.map((item, index) => (
           <NavbarItem key={index}>
             <Link
