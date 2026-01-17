@@ -9,7 +9,7 @@ export default function HeroSection() {
   const titleWords = HERO_DATA.title.rest.split(' ')
 
   return (
-    <div id='main' className='relative mx-auto my-10 flex max-w-7xl flex-col items-center justify-center'>
+    <div className='relative mx-auto my-10 flex max-w-7xl flex-col items-center justify-center'>
       <div className='px-4 py-10 md:py-20'>
         <h1 className='relative z-10 mx-auto max-w-4xl text-center text-2xl font-bold leading-tight md:text-4xl md:leading-tight lg:text-7xl lg:leading-tight'>
           <motion.span

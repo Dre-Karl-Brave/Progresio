@@ -51,7 +51,7 @@ export default function NavbarComponent() {
           icon={<Menu size={24} />}
         />
         <NavbarBrand>
-          <Link href='#main' className='flex items-center gap-3 cursor-pointer'>
+          <Link href='/' className='flex items-center gap-3 cursor-pointer'>
             <div className='text-[#0F172A]'>
               <ProgresioLogo />
             </div>
