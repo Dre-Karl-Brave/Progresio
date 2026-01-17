@@ -3,6 +3,7 @@ import HeroSection from '../modules/landing-page/Hero'
 import Divider from '../modules/landing-page/Divider'
 import About from '../modules/landing-page/About'
 import AdvertisementText from '../modules/landing-page/AdvertisementText'
+import FrequentlyAskedQuestions from '../modules/landing-page/FrequentlyAskedQuestions'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Divider />
       <About />
       <AdvertisementText />
+      <FrequentlyAskedQuestions />
     </>
   )
 }
