@@ -87,3 +87,49 @@ export const FOOTER_DATA = {
   },
   copyright: 'Progresio. All rights reserved.'
 }
+
+export const FEATURES_DATA = {
+  title: 'Powerful Features for Maximum Productivity',
+  description: 'Everything you need to manage tasks, track progress, and achieve your goals efficiently.',
+  features: [
+    {
+      title: 'Smart Task Management',
+      description: 'Organize and prioritize your tasks with AI-powered recommendations tailored to your workflow.',
+      skeleton: 'SkeletonOne',
+      className: 'col-span-1 lg:col-span-4 border-b lg:border-r border-[#E5E7EB]'
+    },
+    {
+      title: 'Visual Progress Tracking',
+      description: 'Monitor your achievements with intuitive visual dashboards and analytics.',
+      skeleton: 'SkeletonTwo',
+      className: 'border-b col-span-1 lg:col-span-2 border-[#E5E7EB]'
+    },
+    {
+      title: 'Works Anywhere',
+      description: 'Access your productivity dashboard from any device, anywhere in the world.',
+      skeleton: 'SkeletonFour',
+      className: 'col-span-1 lg:col-span-3 border-b lg:border-none'
+    }
+  ]
+}
+
+export const SKELETON_TWO_IMAGES = ['/image-1.png', '/image-1.png', '/image-1.png', '/image-1.png', '/image-1.png']
+
+export const GLOBE_CONFIG = {
+  devicePixelRatio: 2,
+  width: 600 * 2,
+  height: 600 * 2,
+  phi: 0,
+  theta: 0,
+  dark: 0,
+  diffuse: 1.2,
+  mapSamples: 16000,
+  mapBrightness: 6,
+  baseColor: [0.3, 0.3, 0.3],
+  markerColor: [0.1, 0.8, 1],
+  glowColor: [0.9, 0.9, 0.9],
+  markers: [
+    { location: [37.7595, -122.4367], size: 0.03 },
+    { location: [40.7128, -74.006], size: 0.1 }
+  ]
+}
