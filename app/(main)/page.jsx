@@ -5,10 +5,12 @@ import About from '../modules/landing-page/About'
 import AdvertisementText from '../modules/landing-page/AdvertisementText'
 import FrequentlyAskedQuestions from '../modules/landing-page/FrequentlyAskedQuestions'
 import Footer from '../modules/landing-page/Footer'
+import NavbarComponent from '../modules/landing-page/Navbar'
 
 export default function Home() {
   return (
     <>
+      <NavbarComponent />
       <HeroSection />
       <Divider />
       <About />
