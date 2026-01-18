@@ -1,10 +1,13 @@
 import NavbarComponent from '@/app/modules/landing-page/Navbar'
+import FeatureComponent from '@/app/modules/landing-page/Feature'
+import Footer from '@/app/modules/landing-page/Footer'
 
 export default function Features() {
   return (
     <div className='min-h-screen bg-[#F8FAFC]'>
       <NavbarComponent />
-      <div className='relative mx-auto my-10 flex max-w-7xl flex-col items-center justify-center'></div>
+      <FeatureComponent />
+      <Footer />
     </div>
   )
 }
