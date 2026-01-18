@@ -72,17 +72,15 @@ export const FOOTER_DATA = {
   quickLinks: {
     title: 'Quick Links',
     links: [
-      { text: 'About', href: '#about' },
-      { text: 'FAQ', href: '#faq' },
+      { text: 'About', href: '/#about' },
+      { text: 'FAQ', href: '/#faq' },
       { text: 'Get Started', href: '/sign-in' }
     ]
   },
   support: {
     title: 'Support',
     links: [
-      { text: 'Contact Us', href: '#' },
-      { text: 'Privacy Policy', href: '#' },
-      { text: 'Terms of Service', href: '#' }
+      { text: 'Contact Us', href: '#' }
     ]
   },
   copyright: 'Progresio. All rights reserved.'
