@@ -1,3 +1,5 @@
+import { Home, Zap, HelpCircle } from 'lucide-react'
+
 export const HERO_DATA = {
   title: {
     emphasis: 'Progresio',
@@ -79,9 +81,7 @@ export const FOOTER_DATA = {
   },
   support: {
     title: 'Support',
-    links: [
-      { text: 'Contact Us', href: '#' }
-    ]
+    links: [{ text: 'Contact Us', href: '#' }]
   },
   copyright: 'Progresio. All rights reserved.'
 }
@@ -131,3 +131,9 @@ export const GLOBE_CONFIG = {
     { location: [40.7128, -74.006], size: 0.1 }
   ]
 }
+
+export const menuItems = [
+  { name: 'About', href: '/#about', icon: <Home className='h-5 w-5' /> },
+  { name: 'Features', href: '/features', icon: <Zap className='h-5 w-5' /> },
+  { name: 'FAQ', href: '/#faq', icon: <HelpCircle className='h-5 w-5' /> }
+]

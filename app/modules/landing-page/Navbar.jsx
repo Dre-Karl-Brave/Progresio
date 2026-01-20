@@ -2,6 +2,7 @@
 
 import { Link } from '@heroui/react'
 import MobileNavbar from './MobileNavbar'
+import { menuItems } from '@/app/constants/landing-page/constants'
 
 const ProgresioLogo = () => {
   return (
@@ -13,12 +14,6 @@ const ProgresioLogo = () => {
 }
 
 export default function NavbarComponent() {
-  const menuItems = [
-    { name: 'About', href: '/#about' },
-    { name: 'Features', href: '/features' },
-    { name: 'FAQ', href: '/#faq' }
-  ]
-
   return (
     <>
       <MobileNavbar />

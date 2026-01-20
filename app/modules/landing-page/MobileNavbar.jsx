@@ -3,13 +3,8 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, Home, Zap, HelpCircle } from 'lucide-react'
-
-const menuItems = [
-  { name: 'About', href: '/#about', icon: <Home className='h-5 w-5' /> },
-  { name: 'Features', href: '/features', icon: <Zap className='h-5 w-5' /> },
-  { name: 'FAQ', href: '/#faq', icon: <HelpCircle className='h-5 w-5' /> }
-]
+import { Menu, X } from 'lucide-react'
+import { menuItems } from '@/app/constants/landing-page/constants'
 
 const ProgresioLogo = () => {
   return (
